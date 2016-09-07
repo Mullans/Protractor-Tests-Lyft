@@ -10,10 +10,10 @@ A test suite for Lyft using Protractor
 - Loads [Partnerships - Lyft](https://www.lyft.com/partnerships)
 
 ## Global Variables
-`var couponRadio = element(by.id('newRider'));`
-`var fundraiseRadio = element(by.id('fundraise'));`
-`var companyRadio = element(by.id('lyftForWork'));`
-`var loginButton = element(by.id('start'));`
+- `var couponRadio = element(by.id('newRider'));`
+- `var fundraiseRadio = element(by.id('fundraise'));`
+- `var companyRadio = element(by.id('lyftForWork'));`
+- `var loginButton = element(by.id('start'));`
 
 
 ## Current Tests
