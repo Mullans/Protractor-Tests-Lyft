@@ -11,6 +11,7 @@ A test suite for Lyft using Protractor
 1 Title should be 'A ride whenever you need one - Lyft'
 
 ### Partnerships Page
+
 1 Title should be 'Partnerships - Lyft'
 2 First radio button should have a value of 'couponPartner'
 3 Clicking on fundraiseRadio should check the fundraise radio button
