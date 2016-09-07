@@ -1,0 +1,32 @@
+{
+  "name": "lyfttests",
+  "version": "1.0.0",
+  "description": "protractor tests for lyft home page",
+  "main": "lyft.conf.js",
+  "dependencies": {
+    "protractor": "^4.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "pretest": "npm run update-webdriver",
+    "test": "protractor lyft.conf.js",
+
+    "preupdate-webdriver": "npm install",
+    "update-webdriver": "webdriver-manager update"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mullans/Protractor-Tests-Lyft.git"
+  },
+  "keywords": [
+    "protractor",
+    "lyft",
+    "test"
+  ],
+  "author": "Sean Mullan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mullans/Protractor-Tests-Lyft/issues"
+  },
+  "homepage": "https://github.com/Mullans/Protractor-Tests-Lyft#readme"
+}

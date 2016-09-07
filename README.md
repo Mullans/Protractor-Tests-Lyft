@@ -1,12 +1,17 @@
 # Protractor-Tests-Lyft
+
 A test suite for Lyft using Protractor
 
 ## Specifications
+
 - Framework: Jasmine
+
 - Selenium Address: http://localhost:4444/wd/hub
+
 - Browsers: Chrome
 
 ## Current Tests
+
 ### Home Page
 
 1. Title should be 'A ride whenever you need one - Lyft'
