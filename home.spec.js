@@ -1,5 +1,8 @@
 describe('Home Page', function(){
+
     beforeEach(function(){
+        jasmine.addMatchers(customMatchers);
+
         isAngularSite(false);
         browser.driver.get(browser.baseUrl);
     });
@@ -25,6 +28,16 @@ describe('Home Page', function(){
         var partnershipsLink = $('a[data-reactid="61"]');
         partnershipsLink.click();
         expect(browser.driver.getCurrentUrl()).toBe('https://www.lyft.com/partnerships');
+    });
+
+    it('should be goofy', function(){
+        expect({
+            hyuk: 'this is fun'
+        }).not.toBeGoofy();
+
+        expect({
+            hyuk: 'gawrsh is fun'
+        }).toBeGoofy(' is fun');
     });
 
 });

@@ -3,17 +3,19 @@ exports.config = {
 
     seleniumAddress: 'http://localhost:4444/wd/hub',
 
-    specs: ['*.spec.js'],
+    specs: ['home.spec.js'],
 
     capabilities: {
         browserName: 'chrome',
         shardTestFiles: true,
-        maxInstances: 2
+        maxInstances: 1
     },
 
     baseUrl: 'https://www.lyft.com',
 
     onPrepare: function(){
+        global.customMatchers = require('./customMatchers');
+
         global.isAngularSite = function(flag){
             browser.ignoreSynchronization = !flag;
         };
