@@ -9,6 +9,7 @@ A test suite for Lyft using Protractor
 ## Current Tests
 ### Home Page
 1. Title should be 'A ride whenever you need one - Lyft'
+2. Explore button should change color to #FF00BF on mouseover
 
 ### Partnerships Page
 

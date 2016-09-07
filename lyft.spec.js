@@ -10,6 +10,14 @@ describe('Lyft Website', function() {
             expect(browser.driver.getTitle()).toEqual('A ride whenever you need one - Lyft');
         });
 
+        it('should change Explore button color on mouseover', function(){
+           var exploreButton = $('button[data-reactid="30"]');
+            expect(exploreButton.isPresent()).toBe(true);
+            browser.driver.actions().mouseMove(exploreButton).perform();
+            browser.driver.sleep(500);
+            expect(exploreButton.getCssValue('color')).toBe('rgba(255, 0, 191, 1)');
+        });
+
     });
 
     describe('Partnerships Page', function () {
