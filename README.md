@@ -8,12 +8,12 @@ A test suite for Lyft using Protractor
 
 ## Current Tests
 ### Home Page
-1 Title should be 'A ride whenever you need one - Lyft'
+1. Title should be 'A ride whenever you need one - Lyft'
 
 ### Partnerships Page
 
-1 Title should be 'Partnerships - Lyft'
-2 First radio button should have a value of 'couponPartner'
-3 Clicking on fundraiseRadio should check the fundraise radio button
-4 The purple login button should be disabled until a radio is selected
-5 If the third radio button is selected, the login button should navigate to [Mobility Solutions](http://get.lyft.com/mobility-solutions/')
+1. Title should be 'Partnerships - Lyft'
+2. First radio button should have a value of 'couponPartner'
+3. Clicking on fundraiseRadio should check the fundraise radio button
+4. The purple login button should be disabled until a radio is selected
+5. If the third radio button is selected, the login button should navigate to [Mobility Solutions](http://get.lyft.com/mobility-solutions/')
