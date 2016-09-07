@@ -1,4 +1,4 @@
-# Protractor-Tests-Lyft [![Build Status](https://travis-ci.org/Mullans/Protractor-Tests-Lyft.svg?branch=master)](https://travis-ci.org/Mullans/Protractor-Tests-Lyft)
+# Protractor-Tests-Lyft
 
 A test suite for Lyft using Protractor
 
