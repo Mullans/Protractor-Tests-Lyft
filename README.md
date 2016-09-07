@@ -6,17 +6,11 @@ A test suite for Lyft using Protractor
 - Selenium Address: http://localhost:4444/wd/hub
 - Browsers: Chrome
 
-## Before Tests
-- Loads [Partnerships - Lyft](https://www.lyft.com/partnerships)
-
-## Global Variables
-- `var couponRadio = element(by.id('newRider'));`
-- `var fundraiseRadio = element(by.id('fundraise'));`
-- `var companyRadio = element(by.id('lyftForWork'));`
-- `var loginButton = element(by.id('start'));`
-
-
 ## Current Tests
+### Home Page
+1 Title should be 'A ride whenever you need one - Lyft'
+
+### Partnerships Page
 1 Title should be 'Partnerships - Lyft'
 2 First radio button should have a value of 'couponPartner'
 3 Clicking on fundraiseRadio should check the fundraise radio button
