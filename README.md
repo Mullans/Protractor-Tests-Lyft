@@ -41,4 +41,4 @@ All custom matchers are stored in `customMatchers.js` and loaded to `global.cust
 
 2. toHaveClass:
     * Usage: `expect(element).toHaveClass(className)`
-    * Checks if the element promised by `element` contains a class named `className`
+    * Checks if the DOM element promised by `element` has the CSS class named `className`
