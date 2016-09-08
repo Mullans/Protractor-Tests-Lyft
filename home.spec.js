@@ -14,7 +14,6 @@ describe('Home Page', function(){
     fit('should change Explore button color on mouseover', function(){
         var exploreButton = $('button[data-reactid="30"]');
         expect(exploreButton.isPresent()).toBe(true);
-        expect(hasClass(exploreButton,'icon-chevron-down'));
         expect(exploreButton).toHaveClass('icon-chevron-down');
         browser.driver.actions().mouseMove(exploreButton).perform();
         browser.driver.sleep(500);

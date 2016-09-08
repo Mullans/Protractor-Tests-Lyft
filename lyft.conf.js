@@ -19,11 +19,11 @@ exports.config = {
         global.isAngularSite = function(flag){
             browser.ignoreSynchronization = !flag;
         };
-        global.hasClass = function (element, cls) {
-            return element.getAttribute('class').then(function (classes) {
-                return classes.split(' ').indexOf(cls) !== -1;
-            });
-        };
+        // global.hasClass = function (element, cls) {
+        //     return element.getAttribute('class').then(function (classes) {
+        //         return classes.split(' ').indexOf(cls) !== -1;
+        //     });
+        // };
     }
 }
 

@@ -30,7 +30,15 @@ var customMatchers = {
                     pass: actual.getAttribute('class').then(function (classes) {
                         return classes.split(' ').indexOf(className) !== -1||classes.split(' ').indexOf(className+"\n") !== -1;
                     }),
-                    message: "This shouldn't show up"
+                    message: "Expected elemenet to have class: "+className
+                }
+            },
+            negativeCompare: function(actual, className){
+                return {
+                    pass: actual.getAttribute('class').then(function (classes) {
+                        return classes.split(' ').indexOf(className) !== -1||classes.split(' ').indexOf(className+"\n") === -1;
+                    }),
+                    message: "Expected element not to have class: " + className
                 }
             }
         }
