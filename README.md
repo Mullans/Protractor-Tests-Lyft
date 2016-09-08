@@ -6,8 +6,6 @@ A test suite for Lyft using Protractor
 
 - Framework: Jasmine
 
-- Selenium Address: http://localhost:4444/wd/hub
-
 - Browsers: Chrome
 
 ## Current Tests
