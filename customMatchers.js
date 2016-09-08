@@ -25,17 +25,17 @@ var customMatchers = {
 
     toHaveClass: function () {
         return {
-            compare: function (actual, className) {
+            compare: function (element, className) {
                 return {
-                    pass: actual.getAttribute('class').then(function (classes) {
+                    pass: element.getAttribute('class').then(function (classes) {
                         return classes.split(' ').indexOf(className) !== -1||classes.split(' ').indexOf(className+"\n") !== -1;
                     }),
                     message: "Expected elemenet to have class: "+className
                 }
             },
-            negativeCompare: function(actual, className){
+            negativeCompare: function(element, className){
                 return {
-                    pass: actual.getAttribute('class').then(function (classes) {
+                    pass: element.getAttribute('class').then(function (classes) {
                         return classes.split(' ').indexOf(className) !== -1||classes.split(' ').indexOf(className+"\n") === -1;
                     }),
                     message: "Expected element not to have class: " + className

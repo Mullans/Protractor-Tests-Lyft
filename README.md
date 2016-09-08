@@ -31,3 +31,14 @@ A test suite for Lyft using Protractor
 4. The purple login button should be disabled until a radio is selected
 
 5. If the third radio button is selected, the login button should navigate to [Mobility Solutions](http://get.lyft.com/mobility-solutions/')
+
+## Custom Matchers
+All custom matchers are stored in `customMatchers.js` and loaded to `global.customMatchers` in `lyft.conf.js`
+
+1. toBeGoofy:
+    * Usage: `expect(actual).toBeGoofy(expected)`
+    * Checks if `actual.hyuk` is equal to `"gawrsh" + expected`
+
+2. toHaveClass:
+    * Usage: `expect(element).toHaveClass(className)`
+    * Checks if the element promised by `element` contains a class named `className`
