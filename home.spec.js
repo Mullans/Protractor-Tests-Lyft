@@ -11,7 +11,7 @@ describe('Home Page', function(){
         expect(browser.driver.getTitle()).toEqual('A ride whenever you need one - Lyft');
     });
 
-    fit('should change Explore button color on mouseover', function(){
+    it('should change Explore button color on mouseover', function(){
         var exploreButton = $('button[data-reactid="30"]');
         expect(exploreButton.isPresent()).toBe(true);
         expect(exploreButton).toHaveClass('icon-chevron-down');
